@@ -41,7 +41,7 @@ namespace Valuator.Pages
 
             string similarityKey = "SIMILARITY-" + id;
             //TODO: посчитать similarity и сохранить в БД по ключу similarityKey
-             int similarity = GetSimilarity(text, id);
+             double similarity = GetSimilarity(text, id);
             _storage.Store(similarityKey, similarity.ToString());
 
             return Redirect($"summary?id={id}");
@@ -60,7 +60,7 @@ namespace Valuator.Pages
             return Math.Round(((double)charsCounter / text.Length), 3);
         }
 
-        private int GetSimilarity(string text, string id)
+        private double GetSimilarity(string text, string id)
         {
             id = "TEXT-" + id;
             var keys = _storage.GetKeysWithPrefix("TEXT-");
