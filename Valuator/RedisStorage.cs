@@ -6,13 +6,12 @@ namespace Valuator
 {
     public class RedisStorage : IStorage
     {
-        private readonly ILogger<RedisStorage> _logger;
-         private IConnectionMultiplexer _connection;
+        private readonly string _host = "localhost";
+        private IConnectionMultiplexer _connection;
         
-        public RedisStorage(ILogger<RedisStorage> logger)
+        public RedisStorage()
         {
-            _logger = logger;
-            _connection = ConnectionMultiplexer.Connect("localhost");
+            _connection = ConnectionMultiplexer.Connect(_host);
         }
         public void Store(string key, string value)
         {
@@ -24,14 +23,15 @@ namespace Valuator
             var db = _connection.GetDatabase();
             return db.StringGet(key);
         }
-        public HashSet<string> GetKeysWithPrefix(string prefix)
+        public List<string> GetKeysWithPrefix(string prefix)
         {
-            var server = _connection.GetServer("localhost", 6379);
-            HashSet<string> keys = new HashSet<string>();
+            var server = _connection.GetServer(_host, 6379);
+            List<string> keys = new List<string>();
             foreach (var key in server.Keys(pattern: prefix + "*"))
             {
                 keys.Add(key);
             }
+
             return keys;
         }
     }

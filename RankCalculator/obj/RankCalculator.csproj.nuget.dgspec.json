@@ -1,0 +1,135 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj": {}
+  },
+  "projects": {
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
+        "projectName": "RankCalculator",
+        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
+        "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
+        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj": {
+                "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "NATS.Client": {
+              "target": "Package",
+              "version": "[0.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj",
+        "projectName": "Valuator",
+        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj",
+        "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
+        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "NATS.Client": {
+              "target": "Package",
+              "version": "[0.12.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

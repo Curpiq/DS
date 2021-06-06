@@ -5,6 +5,6 @@ namespace Valuator
     {
         void Store (string key, string value);
         string Load (string key);
-        HashSet<string> GetKeysWithPrefix(string prefix);
+        List<string> GetKeysWithPrefix(string prefix);
     }
 }
