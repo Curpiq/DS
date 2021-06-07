@@ -1,9 +1,9 @@
 using NATS.Client;
 using System;
-using System.Linq;
 using System.Text;
 using Storage;
 using Tools;
+using Microsoft.Extensions.Logging;
 
 namespace RankCalculator
 {
@@ -11,9 +11,13 @@ namespace RankCalculator
     {
         private readonly IConnection _connection;
         private readonly IAsyncSubscription _subscription;
+        private readonly ILogger<RankCalculator> _logger;
+        private readonly IStorage _storage;
         
-        public RankCalculator(IStorage storage)
+        public RankCalculator(ILogger<RankCalculator> logger, IStorage storage)
         {
+            _logger = logger;
+            _storage = storage;
             _connection = new ConnectionFactory().CreateConnection();
             _subscription = _connection.SubscribeAsync("valuator.processing.rank", "rank_calculator", (sender, args)
                 =>
@@ -21,11 +25,13 @@ namespace RankCalculator
                 string id = Encoding.UTF8.GetString(args.Message.Data);
 
                 string textKey = Constants.TextKeyPrefix + id;
-                string text = storage.Load(textKey);
+                string text = _storage.Load(textKey);
 
                 string rankKey = Constants.RankKeyPrefix + id;
                 string rank = GetRank(text).ToString();
-                storage.Store(rankKey, rank);
+                _storage.Store(rankKey, rank);
+
+                _logger.LogDebug($"Rank = {rank}");
             });
         }
 

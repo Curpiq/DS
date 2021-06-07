@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {}
+    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {}
   },
   "projects": {
-    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
+    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
+        "projectUniqueName": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
         "projectName": "Storage",
-        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
+        "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
         "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
-        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\obj\\",
+        "outputPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"
