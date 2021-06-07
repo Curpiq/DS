@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj": {}
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj": {}
   },
   "projects": {
-    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj": {
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
+        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
         "projectName": "RankCalculator",
-        "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
+        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
         "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
-        "outputPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\obj\\",
+        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
-                "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj"
+              "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
+                "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj"
               },
-              "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
-                "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj"
+              "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
+                "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
+        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
         "projectName": "Storage",
-        "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
+        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
         "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
-        "outputPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\obj\\",
+        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -135,14 +135,14 @@
         }
       }
     },
-    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
+    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
+        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
         "projectName": "Tools",
-        "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
+        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
         "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
-        "outputPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\obj\\",
+        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"

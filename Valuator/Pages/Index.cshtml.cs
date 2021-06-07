@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Text.Json;
 using NATS.Client;
 using Storage;
 using Tools;
@@ -46,11 +46,27 @@ namespace Valuator.Pages
 
             _storage.Store(similarityKey, similarity.ToString());
 
-            CancellationTokenSource cts = new CancellationTokenSource();
-
             await CreateCalculatingRankTask(id);
             
+            SimilarityMessage similarityMessage = new SimilarityMessage(id, similarity);
+            await SentMessage(similarityMessage);
+
             return Redirect($"summary?id={id}");
+        }
+
+        private async Task SentMessage(SimilarityMessage similarityMsg)
+        {            
+            ConnectionFactory cf = new ConnectionFactory();
+            using (IConnection c = cf.CreateConnection())
+            {
+                var data = JsonSerializer.Serialize(similarityMsg);
+                c.Publish("valuator.logging.similarity", Encoding.UTF8.GetBytes(data));
+
+                await Task.Delay(1000);
+
+                c.Drain();
+                c.Close();
+            }
         }
         
         private async Task CreateCalculatingRankTask(string id)
