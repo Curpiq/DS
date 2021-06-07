@@ -1,7 +1,7 @@
 ﻿using NATS.Client;
 using System;
 using System.Text;
-using Valuator;
+using Storage;
 
 namespace RankCalculator
 {

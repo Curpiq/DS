@@ -1,0 +1,12 @@
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\bin\Debug\net5.0\Tools.deps.json
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\bin\Debug\net5.0\Tools.dll
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\bin\Debug\net5.0\ref\Tools.dll
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\bin\Debug\net5.0\Tools.pdb
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.csprojAssemblyReference.cache
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.AssemblyInfoInputs.cache
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.AssemblyInfo.cs
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.csproj.CoreCompileInputs.cache
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.dll
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\ref\Tools.dll
+E:\ПС2018-2022\3 курс\6 сем\DS\Tools\obj\Debug\net5.0\Tools.pdb

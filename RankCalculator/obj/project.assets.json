@@ -1569,22 +1569,28 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Valuator/1.0.0": {
+      "Storage/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "NATS.Client": "0.12.0",
           "StackExchange.Redis": "2.2.4"
         },
         "compile": {
-          "bin/placeholder/Valuator.dll": {}
+          "bin/placeholder/Storage.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Valuator.dll": {}
+          "bin/placeholder/Storage.dll": {}
+        }
+      },
+      "Tools/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Tools.dll": {}
         },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        "runtime": {
+          "bin/placeholder/Tools.dll": {}
+        }
       }
     }
   },
@@ -5587,16 +5593,22 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Valuator/1.0.0": {
+    "Storage/1.0.0": {
       "type": "project",
-      "path": "../Valuator/Valuator.csproj",
-      "msbuildProject": "../Valuator/Valuator.csproj"
+      "path": "../Storage/Storage.csproj",
+      "msbuildProject": "../Storage/Storage.csproj"
+    },
+    "Tools/1.0.0": {
+      "type": "project",
+      "path": "../Tools/Tools.csproj",
+      "msbuildProject": "../Tools/Tools.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "NATS.Client >= 0.12.0",
-      "Valuator >= 1.0.0"
+      "Storage >= 1.0.0",
+      "Tools >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5624,8 +5636,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj": {
-              "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Valuator\\Valuator.csproj"
+            "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj": {
+              "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj"
+            },
+            "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
+              "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj"
             }
           }
         }
