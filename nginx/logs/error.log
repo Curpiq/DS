@@ -37,3 +37,6 @@
 2021/06/07 10:54:01 [emerg] 12388#14812: CreateFile() "E:\ПС2018-2022\3 курс\6 сем\DS\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
 2021/06/07 10:54:39 [emerg] 6224#11992: CreateFile() "E:\ПС2018-2022\3 курс\6 сем\DS\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
 2021/06/07 11:03:21 [emerg] 10496#9108: CreateFile() "E:\ПС2018-2022\3 курс\6 сем\DS\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2021/06/09 16:43:32 [emerg] 1032#13036: CreateFile() "E:\ПС2018-2022\3 курс\6 сем\DS\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2021/06/09 16:43:48 [emerg] 17020#17024: CreateFile() "E:\ПС2018-2022\3 курс\6 сем\DS\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)
+2021/06/09 16:44:58 [emerg] 4324#2200: CreateFile() "E:\ПС2018-2022\3 курс\6 сем\DS\nginx/conf/nginx.conf" failed (1113: No mapping for the Unicode character exists in the target multi-byte code page)

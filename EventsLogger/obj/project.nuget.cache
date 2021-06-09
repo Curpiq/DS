@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3MeB5m6I9SliDBUNZr83JiSJgKkcilQq+sy9KMbXR3/LXxo7wGeDA7RQRYuNKwkW1qQsqnBRCGkP1X5VZKrMaA==",
+  "dgSpecHash": "+Z41cSg4lxHTMu0YA0FBr9q27HMLCCUWORbQuXICz2hdafuqYeNj/vhJ9PxbtjYLKnqJ0GK08jK46Y4kveiHuA==",
   "success": true,
-  "projectFilePath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\EventsLogger.csproj",
+  "projectFilePath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\EventsLogger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",

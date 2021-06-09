@@ -22,10 +22,12 @@ namespace Valuator.Pages
 
         public void OnGet(string id)
         {
-            _logger.LogDebug(id);
+            string shardKey = _storage.GetShardKey(id);
+
+            _logger.LogDebug("LOOKUP: {id}, {shardKey}", id, shardKey);
             
-             Rank = Convert.ToDouble(_storage.Load(Constants.RankKeyPrefix + id.ToString()));
-             Similarity = Convert.ToDouble(_storage.Load(Constants.SimilarityKeyPrefix + id.ToString()));
+             Rank = Convert.ToDouble(_storage.Load(shardKey, Constants.RankKeyPrefix + id.ToString()));
+             Similarity = Convert.ToDouble(_storage.Load(shardKey, Constants.SimilarityKeyPrefix + id.ToString()));
         }
     }
 }

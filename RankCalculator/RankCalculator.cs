@@ -26,12 +26,14 @@ namespace RankCalculator
             {
                 string id = Encoding.UTF8.GetString(args.Message.Data);
 
+                string shardKey = storage.GetShardKey(id);
+
                 string textKey = Constants.TextKeyPrefix + id;
-                string text = _storage.Load(textKey);
+                string text = _storage.Load(shardKey, textKey);
 
                 string rankKey = Constants.RankKeyPrefix + id;
                 double rank = GetRank(text);
-                _storage.Store(rankKey, rank.ToString());
+                _storage.Store(shardKey, rankKey, rank.ToString());
 
                 _logger.LogDebug($"Rank = {rank}");
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CBXvpZu8uGX6I2U7zqcItxr54wzP1QC31s9FCpeVQS+FGNkXgrZYGRcDb9fPrk617b2arIqbrEYpybxvV1Y0jQ==",
+  "dgSpecHash": "1tmLH8RIZhIPlCjQu8hfB90Rrq5AGW3UJoQD8jqAGO5WAp0mVaERdTJqK7DUZm6Pu+g+cD91UhNSao4o4SeEHA==",
   "success": true,
-  "projectFilePath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
+  "projectFilePath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Storage\\Storage.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Alien\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",

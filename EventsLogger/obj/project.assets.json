@@ -4936,11 +4936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\EventsLogger.csproj",
+      "projectUniqueName": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\EventsLogger.csproj",
       "projectName": "EventsLogger",
-      "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\EventsLogger.csproj",
+      "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\EventsLogger.csproj",
       "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
-      "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\obj\\",
+      "outputPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\EventsLogger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4955,8 +4955,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
-              "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj"
+            "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
+              "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj"
             }
           }
         }

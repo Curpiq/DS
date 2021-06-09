@@ -1,5 +1,8 @@
+using System;
+
 namespace Tools
 {
+    [Serializable]
     public struct SimilarityMessage
     {
         public string Id { get; set; }

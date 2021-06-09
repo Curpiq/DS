@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {}
+    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {}
   },
   "projects": {
-    "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
+    "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
+        "projectUniqueName": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
         "projectName": "Tools",
-        "projectPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
+        "projectPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\Tools.csproj",
         "packagesPath": "C:\\Users\\Alien\\.nuget\\packages\\",
-        "outputPath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\obj\\",
+        "outputPath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\Tools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alien\\AppData\\Roaming\\NuGet\\NuGet.Config"

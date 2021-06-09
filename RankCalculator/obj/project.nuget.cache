@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AZ+XmpeuU6UzFXV0rq6yqBq50Xo7dl2HsjpnlQ1XRmd1AbzMCDJYPB0+xgVmHcNglKMAxAUI76qpvYr4GwE95Q==",
+  "dgSpecHash": "PTczWN+lCLsd36YLmmGDvGmph5qG0qWkfHDEwBEd0O9gvWdV0r0YNs7NvGDLlViU5NfiVaZSII30VwFVzHsSTA==",
   "success": true,
-  "projectFilePath": "E:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
+  "projectFilePath": "e:\\ПС2018-2022\\3 курс\\6 сем\\DS\\RankCalculator\\RankCalculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\Alien\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
