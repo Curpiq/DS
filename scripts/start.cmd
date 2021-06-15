@@ -1,6 +1,11 @@
+@echo off
+
 set PathToWebApp=..\Valuator\
 set PathToRankCalculator=..\RankCalculator\
 set PathToNginx=..\nginx\
+
+%PathToWebApp% dotnet build
+%PathToRankCalculator% dotnet build
 
 start "localhost:5001" /d %PathToWebApp% dotnet run --no-build --urls "http://localhost:5001"
 start "localhost:5002" /d %PathToWebApp% dotnet run --no-build --urls "http://localhost:5002"
