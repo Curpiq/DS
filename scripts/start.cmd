@@ -3,6 +3,15 @@ set PathToRankCalculator=..\RankCalculator\
 set PathToEventsLogger=..\EventsLogger\
 set PathToNginx=..\nginx\
 
+cd %PathToWebApp%
+dotnet build
+
+cd %PathToRankCalculator%
+dotnet build
+
+cd %PathToEventsLogger%
+dotnet build
+
 start "localhost:5001" /d %PathToWebApp% dotnet run --no-build --urls "http://localhost:5001"
 start "localhost:5002" /d %PathToWebApp% dotnet run --no-build --urls "http://localhost:5002"
 
