@@ -4,6 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections.Generic;
 using System.Text.Json;
+using System.Linq;
 
 namespace Client
 {
@@ -28,13 +29,19 @@ namespace Client
                     sender.Connect(remoteEP);
 
                     // Подготовка данных к отправке
-                    byte[] msg = Encoding.UTF8.GetBytes(message + "<" + message.Length + ">");
+                    byte[] size = new byte[4];
+                    size = BitConverter.GetBytes(message.Length);
+                    int msgSize = BitConverter.ToInt32(size, 0);
+                    
+                    byte[] msg = Encoding.UTF8.GetBytes(message);
+
+                    byte[] newMsg = size.Concat(msg).ToArray();
 
                     // SEND
-                    int bytesSent = sender.Send(msg);
+                    int bytesSent = sender.Send(newMsg);
 
                     // RECEIVE
-                    byte[] buf = new byte[1024];
+                    byte[] buf = new byte[msgSize];
                     StringBuilder historyStr = new StringBuilder();
                     int bytesRec = 0;
 

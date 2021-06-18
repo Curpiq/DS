@@ -4,7 +4,6 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections.Generic;
 using System.Text.Json;
-using System.Linq;
 
 
 namespace Server
@@ -37,42 +36,33 @@ namespace Server
                 {
                     // ACCEPT
                     Socket handler = listener.Accept();
+                    
+                    byte[] prefixBuf = new byte[4];
+                    int prefix = handler.Receive(prefixBuf);
+                    int size = BitConverter.ToInt32(prefixBuf, 0);
+                    
+                    //Console.WriteLine(size);
 
-                    byte[] buf = new byte[1024];
+                    byte[] buf = new byte[size];
                     string data = null;
-                    int messageLength;
-                    while (true)
+
+                    while (size > 0)
                     {
                         // RECEIVE
                         int bytesRec = handler.Receive(buf);
 
                         data += Encoding.UTF8.GetString(buf, 0, bytesRec);
 
-                        string prefix = "";
-                        for (int i = data.Length - 2; i >= 0; i--)
-                        {
-                            char ch = data[i];
-                            if (ch == '<')
-                            {
-                                break;
-                            }
-                            prefix += data[i];
-                        }
-                        string prefixValue = new string(prefix.ToCharArray().Reverse().ToArray());
-                        messageLength = Convert.ToInt32(prefixValue);
-
-                        if (data.IndexOf("<" + prefixValue + ">") > -1)
-                        {
-                            break;
-                        }
+                        size -= bytesRec;
+                        Console.WriteLine(size);
                     }
 
-                    data = data.Remove(messageLength);
                     _history.Add(data);
                     Console.WriteLine("Message received: {0}", data);
 
                     // Отправляем текст обратно клиенту
-                    byte[] msg = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(_history));
+                    byte[] msg = new byte[size];
+                    msg = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(_history));
 
                     // SEND
                     handler.Send(msg);
