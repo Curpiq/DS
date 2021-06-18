@@ -4,6 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections.Generic;
 using System.Text.Json;
+using System.Linq;
 
 
 namespace Server
@@ -39,7 +40,7 @@ namespace Server
 
                     byte[] buf = new byte[1024];
                     string data = null;
-
+                    int messageLength;
                     while (true)
                     {
                         // RECEIVE
@@ -47,13 +48,26 @@ namespace Server
 
                         data += Encoding.UTF8.GetString(buf, 0, bytesRec);
 
-                        if (data.IndexOf("<EOF>") > -1)
+                        string prefix = "";
+                        for (int i = data.Length - 2; i >= 0; i--)
+                        {
+                            char ch = data[i];
+                            if (ch == '<')
+                            {
+                                break;
+                            }
+                            prefix += data[i];
+                        }
+                        string prefixValue = new string(prefix.ToCharArray().Reverse().ToArray());
+                        messageLength = Convert.ToInt32(prefixValue);
+
+                        if (data.IndexOf("<" + prefixValue + ">") > -1)
                         {
                             break;
                         }
                     }
 
-                    data = data.Remove(data.Length - 5, 5);
+                    data = data.Remove(messageLength);
                     _history.Add(data);
                     Console.WriteLine("Message received: {0}", data);
 

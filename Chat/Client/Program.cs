@@ -28,7 +28,7 @@ namespace Client
                     sender.Connect(remoteEP);
 
                     // Подготовка данных к отправке
-                    byte[] msg = Encoding.UTF8.GetBytes(message + "<EOF>");
+                    byte[] msg = Encoding.UTF8.GetBytes(message + "<" + message.Length + ">");
 
                     // SEND
                     int bytesSent = sender.Send(msg);
