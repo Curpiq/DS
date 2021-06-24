@@ -48,7 +48,7 @@ namespace Valuator.Pages
 
             _storage.Store(shardKey, similarityKey, similarity.ToString());
 
-            _storage.StoreToSet(Constants.textsSetKey, shardKey, text);
+            _storage.StoreToSet(Constants.TextsSetKey, shardKey, text);
 
             await CreateCalculatingRankTask(id);
             
@@ -89,9 +89,9 @@ namespace Valuator.Pages
 
         private double GetSimilarity(string text, string id)
         {
-            if (_storage.CheckingValue(Constants.TextKeyPrefix, Constants.RusId, text) ||
-                _storage.CheckingValue(Constants.TextKeyPrefix, Constants.EUId, text) ||
-                _storage.CheckingValue(Constants.TextKeyPrefix, Constants.OtherId, text))
+            if (_storage.CheckingValue(Constants.TextsSetKey, Constants.RusId, text) ||
+                _storage.CheckingValue(Constants.TextsSetKey, Constants.EUId, text) ||
+                _storage.CheckingValue(Constants.TextsSetKey, Constants.OtherId, text))
             {
                 return 1;
             }

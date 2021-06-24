@@ -6,7 +6,7 @@ namespace Tools
         public const string RankKeyPrefix = "RANK-";
         public const string SimilarityKeyPrefix = "SIMILARITY-";
 
-        public const string textsSetKey = "TEXTS";
+        public const string TextsSetKey = "TEXTS";
 
         public const string RusId = "RUS";
 
